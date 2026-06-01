@@ -1,0 +1,2 @@
+# arm_simulink_lib
+本仓库用于arm数学运算库移植到simulink仿真平台运行
