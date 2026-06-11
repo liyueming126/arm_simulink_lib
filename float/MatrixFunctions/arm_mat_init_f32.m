@@ -1,0 +1,21 @@
+function arm_mat_init_f32_test()
+    fprintf('Testing arm_mat_init_f32...\n');
+
+    A = single([1 2 3; 4 5 6]);
+    B = arm_mat_init_f32_mex(A);
+    if isequal(size(B), size(A)) && all(abs(B(:) - A(:)) < 1e-6)
+        fprintf('Test 1 PASSED\n');
+    else
+        fprintf('Test 1 FAILED\n');
+    end
+
+    A2 = single(eye(4));
+    B2 = arm_mat_init_f32_mex(A2);
+    if isequal(size(B2), size(A2)) && all(abs(B2(:) - A2(:)) < 1e-6)
+        fprintf('Test 2 PASSED\n');
+    else
+        fprintf('Test 2 FAILED\n');
+    end
+
+    fprintf('Done.\n');
+end

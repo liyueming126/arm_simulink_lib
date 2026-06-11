@@ -1,0 +1,113 @@
+=== MEX 测试结果 (float) ===  07-Jun-2026 15:02:55
+格式:  [序号] 函数名  结果
+
+[  1/ 83] arm_abs_f32                                             FAIL
+  detail: === Testing arm_abs_f32 ===
+  detail: Test 1 - Basic vector:
+  detail: x: [0 1.5 -2.5 100 -100 0.1 -0.1 ]
+  detail: z: [0 1.5 2.5 100 100 0.1 0.1 ]
+  detail: PASS
+  detail: Test 2 - Edge values:
+  detail: x: [0 Inf -Inf NaN -0 ]
+  detail: z: [0 Inf Inf NaN 0 ]
+  detail: FAIL
+  detail: Test 3 - Random 10000-element vector: 0.077 ms
+  detail: PASS
+  detail: === 1 test(s) FAILED ===
+[  2/ 83] arm_add_f32                                             FAIL
+  detail: === Testing arm_add_f32 ===
+  detail: Test 1 - Basic vector:
+  detail: x: [0 1.5 -2.5 100 -100 0.1 -0.1 ]
+  detail: y: [0 3.5 1.5 -50 50 0.2 0.2 ]
+  detail: z: [0 5 -1 50 -50 0.3 0.1 ]
+  detail: PASS
+  detail: Test 2 - Edge values:
+  detail: x: [0 Inf -Inf NaN 1.5 ]
+  detail: y: [0 1 1 1 0 ]
+  detail: z: [0 Inf -Inf NaN 1.5 ]
+  detail: FAIL
+  detail: Test 3 - Random 10000-element vector: 0.056 ms
+[  3/ 83] arm_dot_prod_f32                                        PASS
+[  4/ 83] arm_mult_f32                                            FAIL
+  detail: === Testing arm_mult_f32 ===
+  detail: Test 1 - Basic vector:
+  detail: x: [0 1.5 -2.5 100 -100 0.1 -0.1 ]
+  detail: y: [1 2 3 0 -1 0.5 -0.5 ]
+  detail: z: [0 3 -7.5 0 100 0.05 0.05 ]
+  detail: PASS
+  detail: Test 2 - Edge values:
+  detail: x: [0 Inf -Inf NaN 1.5 ]
+  detail: y: [1 2 2 1 0 ]
+  detail: z: [0 Inf -Inf NaN 0 ]
+  detail: FAIL
+  detail: Test 3 - Random 10000-element vector: 0.046 ms
+[  5/ 83] arm_negate_f32                                          FAIL
+  detail: === Testing arm_negate_f32 ===
+  detail: Test 1 - Basic vector:
+  detail: x: [0 1.5 -2.5 100 -100 0.1 -0.1 ]
+  detail: z: [-0 -1.5 2.5 -100 100 -0.1 0.1 ]
+  detail: PASS
+  detail: Test 2 - Edge values:
+  detail: x: [0 Inf -Inf NaN -0 ]
+  detail: z: [-0 -Inf Inf NaN 0 ]
+  detail: FAIL
+  detail: Test 3 - Random 10000-element vector: 0.042 ms
+  detail: PASS
+  detail: === 1 test(s) FAILED ===
+[  6/ 83] arm_offset_f32                                          FAIL
+  detail: === Testing arm_offset_f32 ===
+  detail: Test 1 - Basic vector (offset=0 1.5 -2.5 100 -100 0.1 -0.1 ]
+  detail: z: [3 4.5 0.5 103 -97 3.1 2.9 ]
+  detail: PASS
+  detail: Test 2 - Edge values (offset=0 Inf -Inf NaN 1.5 ]
+  detail: z: [1 Inf -Inf NaN 2.5 ]
+  detail: FAIL
+  detail: Test 3 - Random 10000-element vector: 0.068 ms
+  detail: PASS
+  detail: === 1 test(s) FAILED ===
+[  7/ 83] arm_scale_f32                                           FAIL
+  detail: === Testing arm_scale_f32 ===
+  detail: Test 1 - Basic vector (scale=0 1.5 -2.5 100 -100 0.1 -0.1 ]
+  detail: z: [0 3 -5 200 -200 0.2 -0.2 ]
+  detail: PASS
+  detail: Test 2 - Edge values (scale=0 Inf -Inf NaN 1.5 ]
+  detail: z: [0 Inf -Inf NaN 3 ]
+  detail: FAIL
+  detail: Test 3 - Random 10000-element vector: 0.039 ms
+  detail: PASS
+  detail: === 1 test(s) FAILED ===
+[  8/ 83] arm_sub_f32                                             FAIL
+  detail: === Testing arm_sub_f32 ===
+  detail: Test 1 - Basic vector:
+  detail: x: [0 1.5 -2.5 100 -100 0.1 -0.1 ]
+  detail: y: [0 3.5 1.5 -50 50 0.2 0.2 ]
+  detail: z: [0 -2 -4 150 -150 -0.1 -0.3 ]
+  detail: PASS
+  detail: Test 2 - Edge values:
+  detail: x: [0 Inf -Inf NaN 1.5 ]
+  detail: y: [0 1 1 1 0 ]
+  detail: z: [0 Inf -Inf NaN 1.5 ]
+  detail: FAIL
+  detail: Test 3 - Random 10000-element vector: 0.040 ms
+[  9/ 83] arm_cmplx_conj_f32                                      PASS
+[ 10/ 83] arm_cmplx_dot_prod_f32                                  PASS
+[ 11/ 83] arm_cmplx_mag_f32                                       PASS
+[ 12/ 83] arm_cmplx_mag_squared_f32                               PASS
+[ 13/ 83] arm_cmplx_mult_cmplx_f32                                PASS
+[ 14/ 83] arm_cmplx_mult_real_f32                                 SKIP  (no mexw64)
+[ 15/ 83] arm_pid_init_f32                                        PASS
+[ 16/ 83] arm_pid_reset_f32                                       PASS
+[ 17/ 83] arm_sin_cos_f32                                         PASS
+[ 18/ 83] arm_cos_f32                                             PASS
+[ 19/ 83] arm_sin_f32                                             PASS
+[ 20/ 83] arm_biquad_cascade_df1_f32                              PASS
+[ 21/ 83] arm_biquad_cascade_df1_init_f32                         PASS
+[ 22/ 83] arm_biquad_cascade_df2T_f32                             PASS
+[ 23/ 83] arm_biquad_cascade_df2T_f64                             PASS
+[ 24/ 83] arm_biquad_cascade_df2T_init_f32                        PASS
+[ 25/ 83] arm_biquad_cascade_df2T_init_f64                        PASS
+[ 26/ 83] arm_biquad_cascade_stereo_df2T_f32                      PASS
+[ 27/ 83] arm_biquad_cascade_stereo_df2T_init_f32                 PASS
+[ 28/ 83] arm_conv_f32                                            ERROR (对于此运算，数组的大小不兼容。)
+  detail: 对于此运算，数组的大小不兼容。
+[ 29/ 83] arm_conv_partial_f32                                    PASS

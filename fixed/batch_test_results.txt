@@ -1,0 +1,201 @@
+=== MEX 测试结果 (fixed) ===  07-Jun-2026 14:51:40
+格式:  [序号] 函数名  结果
+
+[  1/195] arm_abs_q15                                             PASS
+[  2/195] arm_abs_q31                                             PASS
+[  3/195] arm_abs_q7                                              PASS
+[  4/195] arm_add_q15                                             PASS
+[  5/195] arm_add_q31                                             PASS
+[  6/195] arm_add_q7                                              PASS
+[  7/195] arm_dot_prod_q15                                        PASS
+[  8/195] arm_dot_prod_q31                                        PASS
+[  9/195] arm_dot_prod_q7                                         PASS
+[ 10/195] arm_mult_q15                                            PASS
+[ 11/195] arm_mult_q31                                            PASS
+[ 12/195] arm_mult_q7                                             PASS
+[ 13/195] arm_negate_q15                                          PASS
+[ 14/195] arm_negate_q31                                          PASS
+[ 15/195] arm_negate_q7                                           PASS
+[ 16/195] arm_offset_q15                                          PASS
+[ 17/195] arm_offset_q31                                          PASS
+[ 18/195] arm_offset_q7                                           PASS
+[ 19/195] arm_scale_q15                                           PASS
+[ 20/195] arm_scale_q31                                           PASS
+[ 21/195] arm_scale_q7                                            PASS
+[ 22/195] arm_shift_q15                                           PASS
+[ 23/195] arm_shift_q31                                           PASS
+[ 24/195] arm_shift_q7                                            PASS
+[ 25/195] arm_sub_q15                                             PASS
+[ 26/195] arm_sub_q31                                             PASS
+[ 27/195] arm_sub_q7                                              PASS
+[ 28/195] arm_cmplx_conj_q15                                      PASS
+[ 29/195] arm_cmplx_conj_q31                                      PASS
+[ 30/195] arm_cmplx_dot_prod_q15                                  PASS
+[ 31/195] arm_cmplx_dot_prod_q31                                  PASS
+[ 32/195] arm_cmplx_mag_q15                                       PASS
+[ 33/195] arm_cmplx_mag_q31                                       PASS
+[ 34/195] arm_cmplx_mag_squared_q15                               PASS
+[ 35/195] arm_cmplx_mag_squared_q31                               PASS
+[ 36/195] arm_cmplx_mult_cmplx_q15                                PASS
+[ 37/195] arm_cmplx_mult_cmplx_q31                                PASS
+[ 38/195] arm_cmplx_mult_real_q15                                 PASS
+[ 39/195] arm_cmplx_mult_real_q31                                 PASS
+[ 40/195] arm_pid_init_q15                                        PASS
+[ 41/195] arm_pid_init_q31                                        PASS
+[ 42/195] arm_pid_q15                                             PASS
+[ 43/195] arm_pid_q31                                             PASS
+[ 44/195] arm_pid_reset_q15                                       PASS
+[ 45/195] arm_pid_reset_q31                                       PASS
+[ 46/195] arm_sin_cos_q31                                         PASS
+[ 47/195] arm_cos_q15                                             PASS
+[ 48/195] arm_cos_q31                                             PASS
+[ 49/195] arm_sin_q15                                             PASS
+[ 50/195] arm_sin_q31                                             PASS
+[ 51/195] arm_sqrt_q15                                            PASS
+[ 52/195] arm_sqrt_q31                                            PASS
+[ 53/195] arm_biquad_cascade_df1_32x64_init_q31                   PASS
+[ 54/195] arm_biquad_cascade_df1_32x64_q31                        PASS
+[ 55/195] arm_biquad_cascade_df1_fast_q15                         PASS
+[ 56/195] arm_biquad_cascade_df1_fast_q31                         PASS
+[ 57/195] arm_biquad_cascade_df1_init_q15                         PASS
+[ 58/195] arm_biquad_cascade_df1_init_q31                         PASS
+[ 59/195] arm_biquad_cascade_df1_q15                              PASS
+[ 60/195] arm_biquad_cascade_df1_q31                              PASS
+[ 61/195] arm_conv_fast_opt_q15                                   PASS
+[ 62/195] arm_conv_fast_q15                                       PASS
+[ 63/195] arm_conv_fast_q31                                       PASS
+[ 64/195] arm_conv_opt_q15                                        PASS
+[ 65/195] arm_conv_opt_q7                                         PASS
+[ 66/195] arm_conv_partial_fast_opt_q15                           PASS
+[ 67/195] arm_conv_partial_fast_q15                               PASS
+[ 68/195] arm_conv_partial_fast_q31                               PASS
+[ 69/195] arm_conv_partial_opt_q15                                PASS
+[ 70/195] arm_conv_partial_opt_q7                                 PASS
+[ 71/195] arm_conv_partial_q15                                    PASS
+[ 72/195] arm_conv_partial_q31                                    PASS
+[ 73/195] arm_conv_partial_q7                                     PASS
+[ 74/195] arm_conv_q15                                            PASS
+[ 75/195] arm_conv_q31                                            PASS
+[ 76/195] arm_conv_q7                                             PASS
+[ 77/195] arm_correlate_fast_opt_q15                              PASS
+[ 78/195] arm_correlate_fast_q15                                  PASS
+[ 79/195] arm_correlate_fast_q31                                  PASS
+[ 80/195] arm_correlate_opt_q15                                   PASS
+[ 81/195] arm_correlate_opt_q7                                    PASS
+[ 82/195] arm_correlate_q15                                       PASS
+[ 83/195] arm_correlate_q31                                       PASS
+[ 84/195] arm_correlate_q7                                        PASS
+[ 85/195] arm_fir_decimate_fast_q15                               PASS
+[ 86/195] arm_fir_decimate_fast_q31                               PASS
+[ 87/195] arm_fir_decimate_init_q15                               PASS
+[ 88/195] arm_fir_decimate_init_q31                               PASS
+[ 89/195] arm_fir_decimate_q15                                    PASS
+[ 90/195] arm_fir_decimate_q31                                    PASS
+[ 91/195] arm_fir_fast_q15                                        PASS
+[ 92/195] arm_fir_fast_q31                                        PASS
+[ 93/195] arm_fir_init_q15                                        PASS
+[ 94/195] arm_fir_init_q31                                        PASS
+[ 95/195] arm_fir_init_q7                                         PASS
+[ 96/195] arm_fir_interpolate_init_q15                            PASS
+[ 97/195] arm_fir_interpolate_init_q31                            PASS
+[ 98/195] arm_fir_interpolate_q15                                 PASS
+[ 99/195] arm_fir_interpolate_q31                                 PASS
+[100/195] arm_fir_lattice_init_q15                                PASS
+[101/195] arm_fir_lattice_init_q31                                PASS
+[102/195] arm_fir_lattice_q15                                     PASS
+[103/195] arm_fir_lattice_q31                                     PASS
+[104/195] arm_fir_q15                                             PASS
+[105/195] arm_fir_q31                                             PASS
+[106/195] arm_fir_q7                                              PASS
+[107/195] arm_fir_sparse_init_q15                                 PASS
+[108/195] arm_fir_sparse_init_q31                                 PASS
+[109/195] arm_fir_sparse_init_q7                                  PASS
+[110/195] arm_fir_sparse_q15                                      PASS
+[111/195] arm_fir_sparse_q31                                      PASS
+[112/195] arm_fir_sparse_q7                                       PASS
+[113/195] arm_iir_lattice_init_q15                                PASS
+[114/195] arm_iir_lattice_init_q31                                PASS
+[115/195] arm_iir_lattice_q15                                     PASS
+[116/195] arm_iir_lattice_q31                                     PASS
+[117/195] arm_lms_init_q15                                        PASS
+[118/195] arm_lms_init_q31                                        PASS
+[119/195] arm_lms_norm_init_q15                                   PASS
+[120/195] arm_lms_norm_init_q31                                   PASS
+[121/195] arm_lms_norm_q15                                        PASS
+[122/195] arm_lms_norm_q31                                        PASS
+[123/195] arm_lms_q15                                             PASS
+[124/195] arm_lms_q31                                             PASS
+[125/195] arm_mat_add_q15                                         PASS
+[126/195] arm_mat_add_q31                                         PASS
+[127/195] arm_mat_cmplx_mult_q15                                  PASS
+[128/195] arm_mat_cmplx_mult_q31                                  PASS
+[129/195] arm_mat_init_q15                                        PASS
+[130/195] arm_mat_init_q31                                        PASS
+[131/195] arm_mat_mult_fast_q15                                   PASS
+[132/195] arm_mat_mult_fast_q31                                   PASS
+[133/195] arm_mat_mult_q15                                        PASS
+[134/195] arm_mat_mult_q31                                        PASS
+[135/195] arm_mat_scale_q15                                       PASS
+[136/195] arm_mat_scale_q31                                       PASS
+[137/195] arm_mat_sub_q15                                         PASS
+[138/195] arm_mat_sub_q31                                         PASS
+[139/195] arm_mat_trans_q15                                       PASS
+[140/195] arm_mat_trans_q31                                       PASS
+[141/195] arm_max_q15                                             PASS
+[142/195] arm_max_q31                                             PASS
+[143/195] arm_max_q7                                              PASS
+[144/195] arm_mean_q15                                            PASS
+[145/195] arm_mean_q31                                            PASS
+[146/195] arm_mean_q7                                             PASS
+[147/195] arm_min_q15                                             PASS
+[148/195] arm_min_q31                                             PASS
+[149/195] arm_min_q7                                              PASS
+[150/195] arm_power_q15                                           PASS
+[151/195] arm_power_q31                                           PASS
+[152/195] arm_power_q7                                            PASS
+[153/195] arm_rms_q15                                             PASS
+[154/195] arm_rms_q31                                             PASS
+[155/195] arm_std_q15                                             PASS
+[156/195] arm_std_q31                                             PASS
+[157/195] arm_var_q15                                             PASS
+[158/195] arm_var_q31                                             PASS
+[159/195] arm_copy_q15                                            PASS
+[160/195] arm_copy_q31                                            PASS
+[161/195] arm_copy_q7                                             PASS
+[162/195] arm_fill_q15                                            PASS
+[163/195] arm_fill_q31                                            PASS
+[164/195] arm_fill_q7                                             PASS
+[165/195] arm_float_to_q15                                        PASS
+[166/195] arm_float_to_q31                                        PASS
+[167/195] arm_float_to_q7                                         PASS
+[168/195] arm_q15_to_float                                        PASS
+[169/195] arm_q15_to_q31                                          PASS
+[170/195] arm_q15_to_q7                                           PASS
+[171/195] arm_q31_to_float                                        PASS
+[172/195] arm_q31_to_q15                                          PASS
+[173/195] arm_q31_to_q7                                           PASS
+[174/195] arm_q7_to_float                                         PASS
+[175/195] arm_q7_to_q15                                           PASS
+[176/195] arm_q7_to_q31                                           PASS
+[177/195] arm_cfft_q31                                            FAIL
+  detail: === Testing arm_cfft_q31 FFT (forward and inverse) ===
+  detail: Test 1 - 16-point forward FFT spectral check:
+  detail: Input (real part):  [100000000 92387953 70710678 38268343 0 -38268343 -70710678 -92387953 -100000000 -92387953 -70710678 -38268343 0 38268343 70710678 92387953 ]
+  detail: Input (imag part):  [0 30614675 56568542 73910363 80000000 73910363 56568542 30614675 0 -30614675 -56568542 -73910363 -80000000 -73910363 -56568542 -30614675 ]
+  detail: FFT output (real):  [-6 89999990 0 -10 2 2 0 -2 2 -2 0 -2 2 2 0 10000006 ]
+  detail: FFT output (imag):  [-6 0 0 0 2 0 0 0 2 0 0 0 2 0 0 0 ]
+  detail: Peak bin: 2 (MATLAB: 2) PASS
+  detail: Test 2 - 16-point forward+inverse FFT:
+  detail: Input-output correlation: 1.000000
+  detail: PASS
+  detail: Test 3 - 32-point forward+inverse FFT:
+  detail: Input-output correlation: 1.000000
+[178/195] arm_cfft_radix2_q15                                     FAIL
+  detail: === Testing arm_cfft_radix2_q15 ===
+  detail: Test 1 - 16-point forward FFT with bitreversal:
+  detail: Output range: [-5000, 4998]
+  detail: PASS (no crash)
+  detail: Test 2 - IFFT round-trip:
+  detail: Max round-trip error: 170512.0
+  detail: FAIL
+  detail: === 1 test(s) FAILED ===

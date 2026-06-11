@@ -1,0 +1,72 @@
+#include <stdint.h>
+#include "mex.h"
+
+typedef int32_t q31_t;
+typedef int64_t q63_t;
+
+static void arm_conv_q31(
+    q31_t *pSrcA,
+    uint32_t srcALen,
+    q31_t *pSrcB,
+    uint32_t srcBLen,
+    q31_t *pDst)
+{
+    q63_t sum;
+    uint32_t i, j;
+
+    for (i = 0; i < (srcALen + srcBLen - 1); i++)
+    {
+        sum = 0;
+
+        for (j = 0; j <= i; j++)
+        {
+            if (((i - j) < srcBLen) && (j < srcALen))
+            {
+                sum += (q63_t)pSrcA[j] * pSrcB[i - j];
+            }
+        }
+
+        pDst[i] = (q31_t)(sum >> 31u);
+    }
+}
+
+void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
+{
+    int32_t *pSrcA, *pSrcB, *pDst;
+    size_t srcALen, srcBLen;
+
+    if (nrhs != 2)
+    {
+        mexErrMsgIdAndTxt("arm_conv_q31_mex:invalidInput",
+            "Two inputs required: int32 arrays signalA and signalB.");
+    }
+
+    if (nlhs > 1)
+    {
+        mexErrMsgIdAndTxt("arm_conv_q31_mex:invalidOutput",
+            "At most one output argument allowed.");
+    }
+
+    if (!mxIsInt32(prhs[0]) || mxIsComplex(prhs[0]))
+    {
+        mexErrMsgIdAndTxt("arm_conv_q31_mex:invalidInputType",
+            "First input must be a real int32 array.");
+    }
+
+    if (!mxIsInt32(prhs[1]) || mxIsComplex(prhs[1]))
+    {
+        mexErrMsgIdAndTxt("arm_conv_q31_mex:invalidInputType",
+            "Second input must be a real int32 array.");
+    }
+
+    pSrcA = (int32_t *)mxGetData(prhs[0]);
+    srcALen = mxGetNumberOfElements(prhs[0]);
+
+    pSrcB = (int32_t *)mxGetData(prhs[1]);
+    srcBLen = mxGetNumberOfElements(prhs[1]);
+
+    plhs[0] = mxCreateNumericMatrix(1, (mwSize)(srcALen + srcBLen - 1), mxINT32_CLASS, mxREAL);
+    pDst = (int32_t *)mxGetData(plhs[0]);
+
+    arm_conv_q31(pSrcA, (uint32_t)srcALen, pSrcB, (uint32_t)srcBLen, pDst);
+}

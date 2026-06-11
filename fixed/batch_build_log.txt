@@ -1,0 +1,8 @@
+=== MEX 编译日志 (fixed) ===  07-Jun-2026 15:00:11
+
+[  1/195] arm_abs_q15_mex OK
+[  2/195] arm_abs_q31_mex OK
+[  3/195] arm_abs_q7_mex OK
+[  4/195] arm_add_q15_mex OK
+[  5/195] arm_add_q31_mex OK
+[  6/195] arm_add_q7_mex 

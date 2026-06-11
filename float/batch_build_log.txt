@@ -1,0 +1,149 @@
+=== MEX 编译日志 (float) ===  07-Jun-2026 15:00:45
+
+[  1/ 83] arm_abs_f32_mex OK
+[  2/ 83] arm_add_f32_mex OK
+[  3/ 83] arm_dot_prod_f32_mex OK
+[  4/ 83] arm_mult_f32_mex OK
+[  5/ 83] arm_negate_f32_mex OK
+[  6/ 83] arm_offset_f32_mex OK
+[  7/ 83] arm_scale_f32_mex OK
+[  8/ 83] arm_sub_f32_mex OK
+[  9/ 83] arm_cmplx_conj_f32_mex OK
+[ 10/ 83] arm_cmplx_dot_prod_f32_mex OK
+[ 11/ 83] arm_cmplx_mag_f32_mex OK
+[ 12/ 83] arm_cmplx_mag_squared_f32_mex OK
+[ 13/ 83] arm_cmplx_mult_cmplx_f32_mex OK
+[ 14/ 83] arm_cmplx_mult_real_f32_mex FAIL
+    arm_cmplx_mult_real_f32_mex.c
+    D:\arm_simulink_lib\float\ComplexMathFunctions\arm_cmplx_mult_real_f32_mex.c(26): error C2059: 语法错误:“...”
+    
+    
+[ 15/ 83] arm_pid_init_f32_mex OK
+[ 16/ 83] arm_pid_reset_f32_mex OK
+[ 17/ 83] arm_sin_cos_f32_mex OK
+[ 18/ 83] arm_cos_f32_mex OK
+[ 19/ 83] arm_sin_f32_mex OK
+[ 20/ 83] arm_biquad_cascade_df1_f32_mex OK
+[ 21/ 83] arm_biquad_cascade_df1_init_f32_mex OK
+[ 22/ 83] arm_biquad_cascade_df2T_f32_mex OK
+[ 23/ 83] arm_biquad_cascade_df2T_f64_mex OK
+[ 24/ 83] arm_biquad_cascade_df2T_init_f32_mex OK
+[ 25/ 83] arm_biquad_cascade_df2T_init_f64_mex OK
+[ 26/ 83] arm_biquad_cascade_stereo_df2T_f32_mex OK
+[ 27/ 83] arm_biquad_cascade_stereo_df2T_init_f32_mex OK
+[ 28/ 83] arm_conv_f32_mex OK
+[ 29/ 83] arm_conv_partial_f32_mex OK
+[ 30/ 83] arm_correlate_f32_mex OK
+[ 31/ 83] arm_fir_decimate_f32_mex OK
+[ 32/ 83] arm_fir_decimate_init_f32_mex OK
+[ 33/ 83] arm_fir_f32_mex OK
+[ 34/ 83] arm_fir_init_f32_mex OK
+[ 35/ 83] arm_fir_interpolate_f32_mex OK
+[ 36/ 83] arm_fir_interpolate_init_f32_mex OK
+[ 37/ 83] arm_fir_lattice_f32_mex OK
+[ 38/ 83] arm_fir_lattice_init_f32_mex OK
+[ 39/ 83] arm_fir_sparse_f32_mex OK
+[ 40/ 83] arm_fir_sparse_init_f32_mex OK
+[ 41/ 83] arm_iir_lattice_f32_mex OK
+[ 42/ 83] arm_iir_lattice_init_f32_mex OK
+[ 43/ 83] arm_lms_f32_mex OK
+[ 44/ 83] arm_lms_init_f32_mex OK
+[ 45/ 83] arm_lms_norm_f32_mex OK
+[ 46/ 83] arm_lms_norm_init_f32_mex OK
+[ 47/ 83] arm_mat_add_f32_mex OK
+[ 48/ 83] arm_mat_cmplx_mult_f32_mex OK
+[ 49/ 83] arm_mat_init_f32_mex FAIL
+    arm_mat_init_f32_mex.c
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2081: “float32_t”: 形参表中的名称非法
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2059: 语法错误:“)”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2054: 在“pData”之后应输入“(”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_mex.c(19): warning C4013: “arm_mat_init_f32”未定义；假设外部返回 int
+    
+    
+[ 50/ 83] arm_mat_inverse_f32_mex OK
+[ 51/ 83] arm_mat_inverse_f64_mex OK
+[ 52/ 83] arm_mat_mult_f32_mex OK
+[ 53/ 83] arm_mat_scale_f32_mex FAIL
+    arm_mat_scale_f32_mex.c
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2146: 语法错误: 缺少“)”(在标识符“scale”的前面)
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2081: “float32_t”: 形参表中的名称非法
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2061: 语法错误: 标识符“scale”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2059: 语法错误:“;”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2059: 语法错误:“,”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(18): error C2059: 语法错误:“)”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_mex.c(29): warning C4013: “arm_mat_scale_f32”未定义；假设外部返回 int
+    
+    
+[ 54/ 83] arm_mat_sub_f32_mex OK
+[ 55/ 83] arm_mat_trans_f32_mex OK
+[ 56/ 83] arm_max_f32_mex OK
+[ 57/ 83] arm_mean_f32_mex OK
+[ 58/ 83] arm_min_f32_mex OK
+[ 59/ 83] arm_power_f32_mex OK
+[ 60/ 83] arm_rms_f32_mex OK
+[ 61/ 83] arm_std_f32_mex OK
+[ 62/ 83] arm_var_f32_mex OK
+[ 63/ 83] arm_copy_f32_mex OK
+[ 64/ 83] arm_fill_f32_mex OK
+[ 65/ 83] arm_float_to_q15_mex OK
+[ 66/ 83] arm_float_to_q31_mex OK
+[ 67/ 83] arm_float_to_q7_mex OK
+[ 68/ 83] arm_q15_to_float_mex OK
+[ 69/ 83] arm_q31_to_float_mex OK
+[ 70/ 83] arm_q7_to_float_mex OK
+[ 71/ 83] arm_bitreversal_mex OK
+[ 72/ 83] arm_cfft_f32_mex FAIL
+    arm_cfft_f32_mex.c
+    D:\arm_simulink_lib\float\TransformFunctions\arm_cfft_f32_simulink.c(474): error C2065: “float32_t”: 未声明的标识符
+    D:\arm_simulink_lib\float\TransformFunctions\arm_cfft_f32_simulink.c(474): error C2146: 语法错误: 缺少“;”(在标识符“L”的前面)
+    
+    
+[ 73/ 83] arm_cfft_radix2_f32_mex OK
+[ 74/ 83] arm_cfft_radix2_init_f32_mex OK
+[ 75/ 83] arm_cfft_radix4_f32_mex OK
+[ 76/ 83] arm_cfft_radix4_init_f32_mex OK
+[ 77/ 83] arm_cfft_radix8_f32_mex OK
+[ 78/ 83] arm_dct4_f32_mex OK
+[ 79/ 83] arm_dct4_init_f32_mex OK
+[ 80/ 83] arm_rfft_f32_mex OK
+[ 81/ 83] arm_rfft_fast_f32_mex OK
+[ 82/ 83] arm_rfft_fast_init_f32_mex OK
+[ 83/ 83] arm_rfft_init_f32_mex OK
+
+总计: 79 成功, 4 失败  (130.7 s)
+
+--- 编译失败 ---
+  arm_cmplx_mult_real_f32_mex
+    arm_cmplx_mult_real_f32_mex.c
+    D:\arm_simulink_lib\float\ComplexMathFunctions\arm_cmplx_mult_real_f32_mex.c(26): error C2059: 语法错误:“...”
+    
+    
+  arm_mat_init_f32_mex
+    arm_mat_init_f32_mex.c
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2143: 语法错误: 缺少“)”(在“*”的前面)
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2081: “float32_t”: 形参表中的名称非法
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2143: 语法错误: 缺少“{”(在“*”的前面)
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2059: 语法错误:“)”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_simulink.c(13): error C2054: 在“pData”之后应输入“(”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_init_f32_mex.c(19): warning C4013: “arm_mat_init_f32”未定义；假设外部返回 int
+    
+    
+  arm_mat_scale_f32_mex
+    arm_mat_scale_f32_mex.c
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2146: 语法错误: 缺少“)”(在标识符“scale”的前面)
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2081: “float32_t”: 形参表中的名称非法
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2061: 语法错误: 标识符“scale”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2059: 语法错误:“;”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(17): error C2059: 语法错误:“,”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_simulink.c(18): error C2059: 语法错误:“)”
+    D:\arm_simulink_lib\float\MatrixFunctions\arm_mat_scale_f32_mex.c(29): warning C4013: “arm_mat_scale_f32”未定义；假设外部返回 int
+    
+    
+  arm_cfft_f32_mex
+    arm_cfft_f32_mex.c
+    D:\arm_simulink_lib\float\TransformFunctions\arm_cfft_f32_simulink.c(474): error C2065: “float32_t”: 未声明的标识符
+    D:\arm_simulink_lib\float\TransformFunctions\arm_cfft_f32_simulink.c(474): error C2146: 语法错误: 缺少“;”(在标识符“L”的前面)
+    
+    
